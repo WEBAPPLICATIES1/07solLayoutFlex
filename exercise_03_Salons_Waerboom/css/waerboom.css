@@ -99,3 +99,75 @@ footer {
 .content_wrapper {
   padding: 10px;
 }
+
+/* OPLOSSING  */
+
+/* De .content_wrapper een breedte geven en centreren */
+.content_wrapper {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+/* Het logo en het nav-element naast elkaar plaatsen met verdeling 20% en 60%.
+En verticaal centreren. */
+header .content_wrapper {
+  display: flex;
+  align-items: center;
+}
+header img {
+  flex-basis: 20%;
+}
+header nav {
+  flex-basis: 60%;
+}
+
+/* Opmaak van de navigatiebalk */
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.2rem;
+  color: #757575;
+}
+nav a:hover {
+  color: #1a7780;
+}
+
+/* De vier artikels naast elkaar plaatsen en horizontaal centreren */
+.articles .content_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* De vier gekleurde onderranden toevoegen bij de artikels */
+.articles article:nth-child(1) header {
+  border-bottom: 5px #97c6d9 solid;
+}
+.articles article:nth-child(2) header {
+  border-bottom: 5px #a6715a solid;
+}
+.articles article:nth-child(3) header {
+  border-bottom: 5px #dcad5b solid;
+}
+.articles article:nth-child(4) header {
+  border-bottom: 5px #238b95 solid;
+}
+
+/* De opmaak van de footer */
+footer p {
+  padding: 10px;
+  text-align: center;
+}
+
+footer p:first-child {
+  background-color: white;
+  color: #a2a48e;
+}
